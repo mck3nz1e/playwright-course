@@ -28,7 +28,7 @@ export default defineConfig({
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ["allure-playwright"],
+    ["allure-playwright", { outputFolder: 'test-results' }],
     ['list']],
 
   globalSetup: require.resolve('./tests/utils/globalSetup.ts'),

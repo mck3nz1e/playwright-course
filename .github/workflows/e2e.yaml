@@ -21,4 +21,11 @@ jobs:
             - name: Run tests
               run: npx playwright test tests/regression/account-signedInRole.spec.ts
 
+            - name: Upload test results
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                name: Test Results
+                path: test-results
+
 
