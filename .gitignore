@@ -135,3 +135,5 @@ dist
 .vscode
 allure-report
 allure-results
+tests/utils/notLoggedInState.json
+tests/utils/loggedInState.json
